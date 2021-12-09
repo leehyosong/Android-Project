@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Food"
+            android:textColor="#9acd32"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/logo2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Share"
+            android:textColor="#9acd32"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/sharetxt1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:gravity="center_horizontal"
+            android:textSize="50dp"/>
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="[마이페이지]"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:textSize="22dp"/>
+
+        <TextView
+            android:id="@+id/sharetxt2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:gravity="center_horizontal"
+            android:textSize="30dp"/>
+
+        <Button
+            android:id="@+id/btnmodify"
+            android:layout_width="300dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center_horizontal"
+            android:text="회원정보수정"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:backgroundTint="#cccc" />
+
+        <TextView
+            android:id="@+id/sharetxt3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:gravity="center_horizontal"
+            android:textSize="30dp"/>
+
+        <Button
+            android:id="@+id/btnout"
+            android:layout_width="300dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center_horizontal"
+            android:text="회원탈퇴"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:backgroundTint="#cccc" />
+
+        <TextView
+            android:id="@+id/sharetxt4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:gravity="center_horizontal"
+            android:textSize="30dp"/>
+
+        <Button
+            android:id="@+id/btnlogout"
+            android:layout_width="300dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center_horizontal"
+            android:text="로그아웃"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:backgroundTint="#cccc" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"/>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

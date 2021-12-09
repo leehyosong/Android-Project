@@ -1,86 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.drawerlayout.widget.DrawerLayout
-    android:id="@+id/drawer"
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-    <com.google.android.material.navigation.NavigationView
-        android:id="@+id/navigation"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_gravity="start|left"
-        app:menu="@menu/menu_main" />
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:gravity="center">
 
-        <include
-            android:id="@+id/include"
-            layout="@layout/toolbar_main" />
+        <TextView
+            android:id="@+id/logo"
+            android:layout_width="109dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="FoodShare"
+            android:textAlignment="center"
+            android:textColor="#9acd32"
+            android:textSize="40dp"
+            android:textStyle="bold" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+        <EditText
+            android:id="@+id/etmemid"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="아이디" />
 
-            <TextView
-                android:id="@+id/tv001"
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:text=" " />
+        <EditText
+            android:id="@+id/etpasswd"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="비밀번호" />
 
-            <TextView
-                android:id="@+id/tv002"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textStyle="bold"
-                android:gravity="center"
-                android:textSize="45dp"
-                android:textColor="@color/black"
-                android:text="LOGIN" />
+        <Button
+            android:id="@+id/btnlogin"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:text="로그인"
+            app:backgroundTint="#9acd32" />
 
-            <EditText
-                android:id="@+id/editId"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:layout_gravity="center"
-                android:text="ID" />
-
-            <EditText
-                android:id="@+id/editPwd"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:layout_gravity="center"
-                android:inputType="textPersonName"
-                android:text="Password" />
-
-            <Button
-                android:id="@+id/MLogin"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Login"
-                android:background="#8cb6ff"/>
-
-            <Button
-                android:id="@+id/MNLogin"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Manager Login" />
-
-        </LinearLayout>
-
-
+        <Button
+            android:id="@+id/btnmanage"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            app:backgroundTint="#CCCCCC"
+            android:text="관리자 권한 로그인" />
     </LinearLayout>
-
-</androidx.drawerlayout.widget.DrawerLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
