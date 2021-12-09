@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/logo"
+            android:layout_width="109dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="FoodShare"
+            android:textAlignment="center"
+            android:textColor="#9acd32"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etmemid"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="아이디" />
+
+        <EditText
+            android:id="@+id/etpasswd"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="비밀번호" />
+
+        <Button
+            android:id="@+id/btnlogin"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:text="로그인"
+            app:backgroundTint="#9acd32" />
+
+        <Button
+            android:id="@+id/btnmanage"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            app:backgroundTint="#CCCCCC"
+            android:text="관리자 권한 로그인" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
